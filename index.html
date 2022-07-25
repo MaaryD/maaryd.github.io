@@ -5,117 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <title>Blue Sky: Real State</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="/assets/images/Logo2.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
-                            aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
+        <nav class="navbar">
+            <a href="/index.html"><img id="logo" src="/assets/images/Logo1.png" alt="Logo de la compania"></a>
+            <ul>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <button type="button">Let us call you!</button>
         </nav>
     </header>
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
-    <h1>Ejemplo Bootstrap</h1>
-    <div class="container-fluid">
-        <!--Esto crea un container con margenes (ajusta al ancho)-->
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque doloremque corporis explicabo sunt amet ab,
-            est ipsa. Reprehenderit maxime modi, minus corrupti tempora sequi nihil assumenda enim eveniet eaque optio.
-        </p>
-    </div>
-    <div class="container">
-        <!--Centra la información-->
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum facilis suscipit aperiam id maxime, quidem
-            optio cumque consequuntur provident dolores ipsa minima qui labore reiciendis commodi dolore nobis, amet
-            nesciunt?</p>
-    </div>
-    <div class="row"> <!--Centrar un titulo-->
-        <div class="col text-center">
-            <h1>Tarjetas con cols de BootStrap</h1>
+    <main class="jumbotron">
+        <section>
+            <h1>Find your perfect home</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </section>
+        <section>
+            <form action="notsure" method="get" class="form">
+                <label for="location">Property Location:</label>
+                <input list="locations" name="location" id="location">
+                <datalist id="locations">
+                    <option value="Any" default></option>
+                    <option value="Allston"></option>
+                    <option value="Arlington"></option>
+                    <option value="Back Bay"></option>
+                    <option value="Boston"></option>
+                    <option value="Brighton"></option>
+                    <option value="Brookline"></option>
+                    <option value="Cambridge"></option>
+                    <option value="Charlestown"></option>
+                    <option value="Dorchester"></option>
+                    <option value="Fenway"></option>
+                    <option value="Malden"></option>
+                    <option value="Somerville"></option>
+                    <option value="South Boston"></option>
+                    <option value="South End"></option>
+                    <option value="Watertown"></option>
+                </datalist>
+                <label for="type">Property type</label>
+                <select name="type" id="type">
+                    <option value="any">Any</option>
+                    <option value="single-family-home">Single Family Home</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="ranch">Ranch</option>
+                    <option value="condo">Condo</option>
+                    <option value="tiny-house">Tiny House</option>
+                </select>
+                <label for="price">Price</label>
+                <span>20k</span>
+                <input type="range" name="price" id="price" min="1" max="10">
+                <span>200k</span>
+                <input type="submit" value="" class="search">
+            </form>
+        </section>
+    </main>
+    <section>
+        <div>
+            <h6>Best Choices</h6>
+            <h1>Popular Residences</h1>
+            <a href="#">See all</a>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="col-3">
-                <div class="card">
-                    <img src="https://picsum.photos/seed/dogs/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+    </section>
+    <section>
+        <div class="catalogue">
+            <div class="houses">
+                <div class="houseImg houseOne"></div>
+                <h3>Golden Glow Residence</h3>
+                <p>2501 E Wood St, Paris, Tenesse 38242</p>
+                <p><span>$53.000</span> / Year</p>
+                <button type="button">See more</button>
+            </div>
+            <div class="houses">
+                <div class="houseImg houseTwo"></div>
+                <h3>Fiddler's Green House</h3>
+                <p>1000 Valley River Way, Eugene, Oregon 97401</p>
+                <p><span>$23.000</span> / Month</p>
+                <button type="button">See more</button>
+            </div>
+            <div class="houses">
+                <div class="houseImg houseThree"></div>
+                <h3>Treetops Apartments</h3>
+                <p>23702 Rockfield Blvd, Lake Forest, California 92630</p>
+                <p><span>$12.000</span> / Month</p>
+                <button type="button">See more</button>
             </div>
         </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="https://picsum.photos/seed/dogs/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="https://picsum.photos/seed/dogs/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-            </div>
-            <div class="col-3">
-                <div class="card">
-                    <img src="https://picsum.photos/seed/dogs/200" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-            </div>
-    </div>
-    
-    
+    </section>
+    <section>
+        <picture>
+            <img src="" alt="">
+        </picture>
+    </section>
+
 </body>
 
 </html>

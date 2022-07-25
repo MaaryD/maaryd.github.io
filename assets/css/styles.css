@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif; 
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #EEEEEC;
+}
+
+/* Comienzo del HEADER */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../images/background-img2.jpg);
+    background-size: cover;
+    background-position:top;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.navbar ul li a{
+    color: #6D6D6D;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    color: #3D3D3D;
+}
+
+button{
+    border: none;
+    background-color: #6D6D6D;
+    padding: 12px 20px;
+    /* border-radius: 30px; */
+    font-size: 15px;
+    color: #EEEEEC;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #3D3D3D;
+}
+
+.search{
+    background: url(../images/vecteezy_magnifying-glass-icon-vector-search-loupe-lens-glass_5426674.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* Comienzo del Jumbotron */
+
+.jumbotron {
+    height: 100vh;
+    padding-top: 40px;
+    background-image: url(../images/background-img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron h1{
+    text-align: center;
+    font-size: 100px;
+    color: #3D3D3D;
+    padding-bottom: 10px;
+}
+
+.jumbotron p{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background-color: white;
+    justify-content: center;
+    padding: 30px;
+    border: #3D3D3D solid 1px;
+}
+
+/* Comienzo de BLOG */
+
+.catalogue{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.houses{
+    background-color: white;
+    width: 500px;
+}
+
+.houseImg{
+    height: 350px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.houseOne{
+    background-image: url(../images/house1.jpg);
+}
+
+.houseTwo{
+    background-image: url(../images/house2.jpg);
+}
+
+.houseThree{
+    background-image: url(../images/house3.jpg);
+}
+
+.houses h3{
+    color: #6D6D6D;
+    margin-left: 30px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.houses p{
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+.houses span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #6D6D6D;
+}
+
+.houses button{
+    margin-left: 30px;
+    margin-bottom: 40px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
