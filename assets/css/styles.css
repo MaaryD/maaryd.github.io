@@ -210,6 +210,16 @@ button:hover{
     border: none;
 }
 
+.send-button{
+    background-color: #3D3D3D;
+    padding: 10px 20px;
+    border: none;
+    color: #EEEEEC;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* Comienzo de FOOTER */
 
 footer{
