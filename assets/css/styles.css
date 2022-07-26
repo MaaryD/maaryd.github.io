@@ -11,30 +11,37 @@ body{
     background-color: #EEEEEC;
 }
 
+
 /* Comienzo del HEADER */
-.navbar {
+.navbar{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-image: url(../images/background-img2.jpg);
-    background-size: cover;
-    background-position:top;
     padding-top: 10px;
     padding-bottom: 5px;
     padding-left: 5%;
     padding-right: 5%;
 }
 
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
 .navbar ul li{
-    list-style-type: none;
-    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
 
 .navbar ul li a{
     color: #6D6D6D;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -74,24 +81,33 @@ button:hover{
 }
 
 .jumbotron h1{
+    /* background-image: url(../images/background-img22.png);
+    background-position: center;
+    background-size: cover; */
     text-align: center;
-    font-size: 100px;
+    font-size: 5rem;
     color: #3D3D3D;
     padding-bottom: 10px;
 }
 
 .jumbotron p{
     text-align: center;
+    font-size: 1rem;
 }
 
 .form{
     display: flex;
     align-items: center;
     width: 50%;
-    background-color: white;
-    justify-content: center;
+    background-color: white 80%;
+    justify-content: space-between;
     padding: 30px;
     border: #3D3D3D solid 1px;
+    margin-left: 25%;
+}
+
+.form input{
+    padding-left: 20px;
 }
 
 /* Comienzo de BLOG */
@@ -194,7 +210,7 @@ button:hover{
 }
 
 .adittions h1{
-    font-size: 50px;
+    font-size: 3rem;
     color: #3D3D3D;
     margin-bottom: 10px;
 }
@@ -253,4 +269,48 @@ footer picture img{
     font-size: 20px;
     padding-bottom: 15px;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width:1200px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+    }
+}
+
+@media (max-width:990px){
+    .jumbotron h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:620px) {
+    .navbar ul li a{
+        font-size: 1rem;
+    }
+
+    .adittions{
+        font-size: 2rem;
+        margin-top: 50px;
+        height: 300px;
+    }
+    
+}
+
+@media (max-width:525px) {
+    .navbar ul li a{
+        font-size: 0.8rem;
+    }
+
+    .adittions h1{
+        font-size: 2rem;
+    }
+    
+}
+
+
 
