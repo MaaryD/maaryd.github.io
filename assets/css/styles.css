@@ -64,12 +64,6 @@ button:hover{
     background-color: #3D3D3D;
 }
 
-.search{
-    background: url(../images/vecteezy_magnifying-glass-icon-vector-search-loupe-lens-glass_5426674.jpg);
-    background-position:center;
-    background-repeat:no-repeat;
-}
-
 /* Comienzo del Jumbotron */
 
 .jumbotron {
@@ -95,19 +89,70 @@ button:hover{
     font-size: 1rem;
 }
 
-.form{
+.form-container{
     display: flex;
     align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     width: 50%;
-    background-color: white 80%;
-    justify-content: space-between;
-    padding: 30px;
-    border: #3D3D3D solid 1px;
+    height: fit-content;
+    background-color: white;
     margin-left: 25%;
+    margin-top: 30px; 
 }
 
-.form input{
-    padding-left: 20px;
+.form-container form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.input-box label{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #3D3D3D;
+}
+
+.input-box select{
+    margin: 0.6rem 0;
+    padding-top: 0.3rem;
+    border: none;
+}
+
+.price-slider{
+    display: flex;
+    margin: 0.6rem 0;
+    padding-top: 0.3rem;
+}
+
+.input-button input{
+    border: none;
+    color: #EEEEEC;
+    background-color: #6D6D6D;
+    font-size: 13px;
+    padding: 9px 15px;
+}
+
+.input-button input:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #3D3D3D;
 }
 
 /* Comienzo de BLOG */
@@ -312,5 +357,47 @@ footer picture img{
     
 }
 
+@media (max-width:1887px){
+    .input-box{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width:1630px){
+    .input-box{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 1342px){
+
+    .form-container{
+        height: 12vh;
+    }
+
+    .input-box{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-group{
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
+        justify-content: center;
+    }
+
+    .input-box label{
+        padding-right: 0.3rem;
+    }
+}
+
+@media (max-width: 936px){
+    .form-container{
+        height: fit-content;
+    }
+}
 
 
