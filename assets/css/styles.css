@@ -400,4 +400,10 @@ footer picture img{
     }
 }
 
+@media (max-width:520px){
+    .input-box{
+        flex-direction: column;
+    }
+}
+
 
